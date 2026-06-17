@@ -12,3 +12,13 @@ A responsive website project for a cozy specialty coffeehouse and tabletop gamin
 ## Concept
 
 The Sidequest Cafe combines specialty coffee, board games, and a welcoming community space.
+
+## Pages Planned
+
+- Home
+- About
+- Menu
+- Games
+- Events
+- Gallery
+- Contact
