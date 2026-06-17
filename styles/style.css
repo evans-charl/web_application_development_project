@@ -1,0 +1,16 @@
+:root {
+    --cream: #F4EFE6;
+    --espresso: #3B2418;
+    --terracotta: #C96B3B;
+    --mustard: #D4A72C;
+}
+
+body {
+    background: var(--cream);
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    color: var(--espresso);
+}
