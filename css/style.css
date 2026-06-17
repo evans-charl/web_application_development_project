@@ -14,3 +14,21 @@ h1,
 h2 {
     color: var(--espresso);
 }
+
+.btn {
+    background: var(--terracotta);
+    color: white;
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
