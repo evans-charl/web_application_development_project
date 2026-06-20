@@ -25,13 +25,19 @@ h2 {
 .card {
     transition: 0.3s;
 }
+.card:hover {
+    transform: translateY(-5px);
+}
 
 .card h3 {
     color: var(--espresso);
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.menu-card span {
+    background:var(--mustard);
+    padding:5px 15px;
+    border-radius:20px;
+    font-size:14px;
 }
 
 .hero {
