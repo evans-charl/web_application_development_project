@@ -23,10 +23,18 @@ h2 {
 }
 
 .card {
+    overflow: hidden;
     transition: 0.3s;
 }
+
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
 .card h3 {
@@ -34,37 +42,34 @@ h2 {
 }
 
 .menu-card span {
-    background:var(--mustard);
-    padding:5px 15px;
-    border-radius:20px;
-    font-size:14px;
+    background: var(--mustard);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 .hero {
     min-height: 70vh;
     background:
-    linear-gradient(
-        rgba(59,36,24,0.65),
-        rgba(59,36,24,0.65)
-    ),
-    url("../images/cafe.jpg");
+        linear-gradient(rgba(59, 36, 24, 0.65), rgba(59, 36, 24, 0.65)),
+        url("../images/cafe.jpg");
     background-size: cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .hero h1 {
-    color:white;
-    font-size:60px;
+    color: white;
+    font-size: 60px;
 }
 
 .hero p {
-    font-size:22px;
-    color:white;
+    font-size: 22px;
+    color: white;
 }
 
 @media(max-width:768px) {
