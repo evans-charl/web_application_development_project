@@ -2,6 +2,10 @@
 
 A responsive website project for a cozy specialty coffeehouse and tabletop gaming cafe.
 
+## Concept
+
+The Sidequest Cafe combines specialty coffee, board games, and a welcoming community space.
+
 ## Technologies Used
 
 - HTML5
@@ -9,16 +13,19 @@ A responsive website project for a cozy specialty coffeehouse and tabletop gamin
 - JavaScript
 - Bootstrap 5
 
-## Concept
-
-The Sidequest Cafe combines specialty coffee, board games, and a welcoming community space.
-
-## Pages Planned
+## Pages Completed
 
 - Home
 - About
 - Menu
 - Games
-- Events
-- Gallery
 - Contact
+
+
+## Features
+
+- Responsive Bootstrap navigation
+- Cafe image gallery
+- Interactive game search
+- JavaScript validation
+- Mobile friendly layout
