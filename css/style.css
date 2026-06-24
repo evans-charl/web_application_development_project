@@ -72,6 +72,20 @@ h2 {
     color: white;
 }
 
+.gallery-card {
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    height:100%;
+}
+
+.gallery-card img {
+    height:300px;
+    width:100%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 30px;
