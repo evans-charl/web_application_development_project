@@ -1,31 +1,59 @@
 # The Sidequest Cafe
 
-A responsive website project for a cozy specialty coffeehouse and tabletop gaming cafe.
+A responsive multi-page cafe website combining specialty coffee culture with tabletop gaming experiences.
+
 
 ## Concept
 
-The Sidequest Cafe combines specialty coffee, board games, and a welcoming community space.
+The Sidequest Cafe is designed as a cozy third-place where visitors can enjoy handcrafted drinks, board games, and meaningful social interactions.
 
-## Technologies Used
+
+## Technologies
 
 - HTML5
 - CSS
 - JavaScript
 - Bootstrap 5
 
-## Pages Completed
+
+## Pages
 
 - Home
 - About
 - Menu
 - Games
+- Gallery
+- Events
 - Contact
 
 
 ## Features
 
 - Responsive Bootstrap navigation
+- Mobile-friendly layout
 - Cafe image gallery
 - Interactive game search
-- JavaScript validation
-- Mobile friendly layout
+- Contact form validation
+- Dark/light mode toggle
+
+
+## Project Structure
+
+Sidequest-Cafe/
+
+│
+
+├── css/
+
+├── js/
+
+├── images/
+
+├── pages/
+
+└── index.html
+
+
+## Theme
+
+Warm Nordic-Industrial design inspired by specialty coffee shops, bookstores, and community spaces.
