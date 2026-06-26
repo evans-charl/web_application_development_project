@@ -105,6 +105,56 @@ footer {
     margin-bottom:20px;
 }
 
+
+body,
+.card,
+.navbar,
+.btn,
+input,
+textarea {
+    transition: background-color .4s ease, color .4s ease, border-color .4s ease;
+}
+
+.dark-mode {
+    background:#181512;
+    color:#eeeeee;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color:#f3c892;
+}
+
+.dark-mode p {
+    color:#dddddd;
+}
+
+.dark-mode .card {
+    background:#25201c;
+    color:white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background:#302820;
+    color:white;
+    border:1px solid #5b4635;
+}
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+    background:#302820;
+    color:white;
+}
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color:#ccc;
+}
+
+.dark-mode footer {
+    background:#0d0b09!important;
+}
+
 @media(max-width:768px) {
     h1 {
         font-size: 30px;
