@@ -8,10 +8,17 @@
 body {
     background: var(--cream);
     font-family: Arial, sans-serif;
+    color:#333;
+}
+
+.navbar {
+    padding:20px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
+    font-family:Georgia,serif;
     color: var(--espresso);
 }
 
@@ -22,13 +29,21 @@ h2 {
     padding: 12px 25px;
 }
 
-.card {
-    overflow: hidden;
-    transition: 0.3s;
+.btn-warning {
+    background:var(--terracotta);
+    border:none;
+    color:white;
 }
 
+.card {
+    border:none;
+    overflow: hidden;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
 .card:hover {
-    transform: translateY(-10px);
+    transform:translateY(-8px);
 }
 
 .card-img-top {
@@ -46,6 +61,10 @@ h2 {
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 14px;
+}
+
+footer {
+    background:var(--espresso)!important;
 }
 
 .hero {
