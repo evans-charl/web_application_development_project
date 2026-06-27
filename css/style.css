@@ -39,11 +39,11 @@ h3 {
     border:none;
     overflow: hidden;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-    transition:.3s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s !important;
 }
 .card:hover {
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .card-img-top {
@@ -112,7 +112,7 @@ body,
 .btn,
 input,
 textarea {
-    transition: background-color .4s ease, color .4s ease, border-color .4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 .dark-mode {
@@ -162,5 +162,15 @@ textarea {
 
     p {
         font-size: 16px;
+    }
+}
+
+@media(max-width:768px) {
+    .hero h1{
+        font-size:38px;
+    }
+
+    .card {
+        margin-bottom:20px;
     }
 }
