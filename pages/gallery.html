@@ -51,29 +51,29 @@
         <p class="text-center">A glimpse into our coffee, games, and community atmosphere.</p>
         <div class="row g-4 mt-4">
             <div class="col-md-6">
-                <div class="gallery-card">
-                    <img src="/images/cafe.jpg" class="img-fluid rounded" alt="Cafe interior">
+                <div class="card gallery-card">
+                    <img src="/images/cafe_2.jpg" class="img-fluid rounded gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Cafe interior">
                     <h3>The Space</h3>
                     <p>Warm lighting, wooden tables, and comfortable corners.</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="gallery-card">
-                    <img src="/images/coffee.jpg" class="img-fluid rounded" alt="Coffee preparation">
+                <div class="card gallery-card">
+                    <img src="/images/coffee.jpg" class="img-fluid rounded gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Coffee preparation">
                     <h3>Coffee Craft</h3>
                     <p>Carefully prepared drinks made for slow moments.</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="gallery-card">
-                    <img src="/images/boardgames.jpg" class="img-fluid rounded" alt="Board games">
+                <div class="card gallery-card">
+                    <img src="/images/boardgames.jpg" class="img-fluid rounded gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Board games">
                     <h3>Game Library</h3>
                     <p>A collection designed for beginners and enthusiasts.</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="gallery-card">
-                    <img src="/images/food.jpg" class="img-fluid rounded" alt="Cafe pastries">
+                <div class="card gallery-card">
+                    <img src="/images/food.jpg" class="img-fluid rounded gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Cafe pastries">
                     <h3>Fresh Bakery</h3>
                     <p>Small treats that complete every visit.</p>
                 </div>
@@ -81,11 +81,40 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center p-4 mt-5">
-        <p>&copy; 2026 The Sidequest Cafe</p>
-        <p>Coffee &bull; Community &bull; Board Games</p>
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3>The Sidequest Cafe</h3>
+                    <p>A cozy coffeehouse where every visit becomes a new adventure.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Explore</h4>
+                    <a href="/pages/menu.html">Menu</a>
+                    <br>
+                    <a href="/pages/games.html">Games</a>
+                    <br>
+                    <a href="/pages/events.html">Events</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Visit Us</h4>
+                    <p>Westlands, Nairobi<br>Mon-Fri: 7AM - 10PM<br>Weekend: 8AM - 11PM</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2026 The Sidequest Cafe<br>Coffee &bull; Community &bull; Adventures</p>
+        </div>
     </footer>
 
+    <div class="modal fade" id="imageModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img id="modalImage" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
     <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

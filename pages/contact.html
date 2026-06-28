@@ -46,34 +46,65 @@
         </div>
     </nav>
 
-    <section class="container py-5">
+    <section class="container py-5 contact-container">
         <h1 class="text-center">Visit The Cafe</h1>
+        <p class="text-center">Have a question, want to reserve a table, or plan a game night? Send us a message.</p>
         <div class="row g-4 mt-4">
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3>Location</h3>
+            <div class="col-lg-5">
+                <div class="card p-4 h-100">
+                    <h3>Find Us</h3>
                     <p>Westlands, Nairobi</p>
                     <h3>Opening Hours</h3>
-                    <p>Monday-Friday: 7AM - 10PM<br>Weekend: 8AM - 11PM</p>
+                    <p>Monday - Friday:<br>7:00 AM - 10:00 PM<br>Saturday - Sunday:<br>8:00 AM - 11:00 PM</p>
+                    <h3>Contact</h3>
+                    <p>
+                        Phone:&nbsp;<a href="tel:+254701234567">+254 701 234 567</a>
+                        <br>
+                        Email:&nbsp;<a href="mail:contact@thesidequestcafe.com">contact@thesidequestcafe.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-7">
                 <div class="card p-4">
                     <h3>Send A Message</h3>
                     <form id="contactForm">
-                        <input id="name" class="form-control mb-3" placeholder="Name">
-                        <input id="email" class="form-control mb-3" placeholder="Email">
-                        <textarea id="message" class="form-control mb-3" placeholder="Message"></textarea>
-                        <button class="btn btn-warning">Send</button>
+                        <label class="form-label">Name</label>
+                        <input id="name" class="form-control mb-3" placeholder="Your name">
+                        <label class="form-label">Email</label>
+                        <input id="email" class="form-control mb-3" placeholder="your@email.com">
+                        <label class="form-label">Message</label>
+                        <textarea id="message" class="form-control mb-3" rows="5" placeholder="Tell us how we can help"></textarea>
+                        <button class="btn btn-warning">Send Message</button>
                     </form>
+                    <div id="formMessage" style="padding-block: 20px;"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center p-4 mt-5">
-        <p>&copy; 2026 The Sidequest Cafe</p>
-        <p>Coffee &bull; Community &bull; Board Games</p>
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3>The Sidequest Cafe</h3>
+                    <p>A cozy coffeehouse where every visit becomes a new adventure.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Explore</h4>
+                    <a href="/pages/menu.html">Menu</a>
+                    <br>
+                    <a href="/pages/games.html">Games</a>
+                    <br>
+                    <a href="/pages/events.html">Events</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Visit Us</h4>
+                    <p>Westlands, Nairobi<br>Mon-Fri: 7AM - 10PM<br>Weekend: 8AM - 11PM</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2026 The Sidequest Cafe<br>Coffee &bull; Community &bull; Adventures</p>
+        </div>
     </footer>
 
     <script src="/js/script.js"></script>
