@@ -32,7 +32,7 @@ The Sidequest Cafe is designed as a cozy third-place where visitors can enjoy ha
 - Responsive Bootstrap navigation
 - Mobile-friendly layout
 - Cafe image gallery
-- Interactive game search
+- Interactive menu and game search
 - Contact form validation
 - Dark/light mode toggle
 
