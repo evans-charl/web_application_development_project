@@ -1,33 +1,76 @@
 const themeButton = document.getElementById("themeToggle");
+const contactForm = document.getElementById("contactForm");
 
 
 function searchGames() {
-    let input = document.getElementById("search").value.toLowerCase();
+    let input = document.getElementById("searchGames").value.toLowerCase();
     let games = document.querySelectorAll(".game-card");
 
     games.forEach(game => {
         if (game.innerText.toLowerCase().includes(input)) {
             game.style.display = "block";
-        }
-
-        else {
+        } else {
             game.style.display = "none";
         }
     });
 }
 
-document.getElementById("contactForm")?.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
+function searchMenu() {
+    let input = document.getElementById("searchMenu").value.toLowerCase();
+    let menu = document.querySelectorAll(".menu-card");
 
-    if (name === "" || email === "") {
-        alert("Please complete all fields");
+    menu.forEach(menu => {
+        if (menu.innerText.toLowerCase().includes(input)) {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+}
 
-        return;
+function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+
+contactForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    let formMessage = document.getElementById("formMessage");
+    let valid = true;
+
+    [name, email, message].forEach(field => {
+        field.classList.remove("is-valid", "is-invalid");
+    });
+
+    if (name.value.trim() === "") {
+        name.classList.add("is-invalid");
+        valid = false;
+    } else {
+        name.classList.add("is-valid");
     }
 
-    alert("Thanks for contacting Sidequest Cafe!");
+    if (!validateEmail(email.value)) {
+        email.classList.add("is-invalid");
+        valid = false;
+    } else {
+        email.classList.add("is-valid");
+    }
+
+    if (message.value.trim() === "") {
+        message.classList.add("is-invalid");
+        valid = false;
+    } else {
+        message.classList.add("is-valid");
+    }
+
+    if (valid) {
+        formMessage.innerHTML = `<div class="alert alert-success">Thanks ${name.value}! Your message has been sent. We will get back to you soon.</div>`;
+        contactForm.reset();
+    }
 });
 
 
@@ -50,5 +93,14 @@ themeButton?.addEventListener("click", () => {
 if(localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
 }
+
+const galleryImages = document.querySelectorAll(".gallery-image");
+const modalImage = document.getElementById("modalImage");
+
+galleryImages.forEach(image => {
+    image.addEventListener("click",() => {
+        modalImage.src = image.src;
+    });
+});
 
 updateThemeIcon();

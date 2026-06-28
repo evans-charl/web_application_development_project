@@ -49,8 +49,10 @@
     <section class="container py-5">
         <h1 class="text-center">Consumables</h1>
         <p class="text-center">Handcrafted drinks and bakery creations from our kitchen.</p>
-        <div class="row g-4 mt-4">
-            <div class="col-md-4">
+        <input id="searchMenu" onkeyup="searchMenu()" class="form-control my-5" placeholder="Search drinks, food, or treats...">
+
+        <div class="row g-4 m-4" id="menuItems">
+            <div class="col-md-4 menu-card">
                 <div class="card h-100">
                     <img src="/images/coffee_1.jpg" class="card-img-top" alt="Honey cinnamon latte">
                     <div class="card-body">
@@ -60,51 +62,75 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 menu-card">
                 <div class="card h-100">
                     <img src="/images/coffee_2.jpg" class="card-img-top" alt="Cold brew coffee">
                     <div class="card-body">
                         <h3>Forest Cold Brew</h3>
-                        <p>Slow brewed coffee served chilled with smooth flavours.</p>
+                        <p>Smooth slow-brewed coffee served chilled.</p>
                         <h5>KSh 350</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 menu-card">
+                <div class="card h-100">
+                    <img src="/images/pastry.jpg" class="card-img-top" alt="Fresh pastry">
+                    <div class="card-body">
+                        <h3>Morning Pastry Quest</h3>
+                        <p>Fresh baked pastries made daily.</p>
+                        <h5>KSh 280</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-card">
                 <div class="card h-100">
                     <img src="/images/chocolate_cake.jpg" class="card-img-top" alt="Chocolate cake">
                     <div class="card-body">
                         <h3>Dungeon Chocolate Cake</h3>
-                        <p>Rich chocolate dessert made for sharing.</p>
+                        <p>Rich chocolate dessert perfect for sharing.</p>
                         <h5>KSh 300</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-card">
+                <div class="card h-100">
+                    <img src="/images/breakfast.jpg" class="card-img-top" alt="Breakfast meal">
+                    <div class="card-body">
+                        <h3>Explorer Breakfast</h3>
+                        <p>A balanced breakfast plate for slow mornings.</p>
+                        <h5>KSh 550</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container py-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3>Flavor Quests</h3>
-                    <p>Try seasonal coffee flights, handcrafted drinks, and unique cafe creations.</p>
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3>The Sidequest Cafe</h3>
+                    <p>A cozy coffeehouse where every visit becomes a new adventure.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Explore</h4>
+                    <a href="/pages/menu.html">Menu</a>
+                    <br>
+                    <a href="/pages/games.html">Games</a>
+                    <br>
+                    <a href="/pages/events.html">Events</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Visit Us</h4>
+                    <p>Westlands, Nairobi<br>Mon-Fri: 7AM - 10PM<br>Weekend: 8AM - 11PM</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h3>Bakery Loot</h3>
-                    <p>Fresh pastries prepared daily to complete your coffee adventure.</p>
-                </div>
-            </div>
+            <hr>
+            <p class="text-center">&copy; 2026 The Sidequest Cafe<br>Coffee &bull; Community &bull; Adventures</p>
         </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center p-4 mt-5">
-        <p>&copy; 2026 The Sidequest Cafe</p>
-        <p>Coffee &bull; Community &bull; Board Games</p>
     </footer>
 
     <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
