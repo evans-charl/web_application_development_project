@@ -87,7 +87,7 @@ h3 {
     min-height: 85vh;
     background:
         linear-gradient(rgba(59, 36, 24, 0.65), rgba(59, 36, 24, 0.65)),
-        url("../images/cafe.jpg");
+        url("/images/cafe.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
