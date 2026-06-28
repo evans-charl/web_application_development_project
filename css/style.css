@@ -63,12 +63,28 @@ h3 {
     font-size: 14px;
 }
 
-footer {
-    background:var(--espresso)!important;
+.site-footer {
+    background:#3B2418;
+    color:white;
+    padding:50px 0;
+}
+
+.site-footer h3,
+.site-footer h4 {
+    color:#F4EFE6;
+}
+
+.site-footer a {
+    color:#D4A72C;
+    text-decoration:none;
+}
+
+.site-footer a:hover {
+    text-decoration:underline;
 }
 
 .hero {
-    min-height: 70vh;
+    min-height: 85vh;
     background:
         linear-gradient(rgba(59, 36, 24, 0.65), rgba(59, 36, 24, 0.65)),
         url("../images/cafe.jpg");
